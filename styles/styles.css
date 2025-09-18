@@ -4,6 +4,14 @@
     --border-type: solid;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS Tag Selectors */
+
 nav {
     background-color: var(--heading-color);
     padding: 10px;
@@ -12,11 +20,13 @@ nav {
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 10px;
 }
 
 h1 {
     color: var(--heading-color);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 main img {
@@ -25,6 +35,8 @@ main img {
     border: var(--border-width) var(--border-type) black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 1rem;
 }
 
 p {
@@ -37,11 +49,16 @@ main {
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: var(--border-width) var(--border-type) rgb(0 0 0 / 0.2);
     padding: 1rem;
     background-color: darkgray;
     color: black;
+    position: relative;
+}
+
+aside h2 {
+    position: absolute;
+    top: 1rem;
+    left: 1.2rem;
 }
 
 aside img {
@@ -53,4 +70,38 @@ footer {
     margin-top: 15px;
     border-top: var(--border-width) dotted black;
     text-align: center;
+}
+
+ul {
+    width: 18rem;
+    clear: both;
+}
+
+ul p {
+    margin-bottom: 10px;
+}
+
+ul li {
+    margin-left: 1.1rem;
+    padding: 2px 0px;
+}
+
+/* CSS Class Selectors */
+
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    border: var(--border-type) var(--border-type) rgb(0 0 0 / 0.2);
+    background-color: darkgray;
+    color: black;
+}
+
+/* CSS ID Selectors */
+
+#photodescription {
+    margin-top: 30px;
+}
+
+.moveright {
+    margin-left: 1rem;
 }
