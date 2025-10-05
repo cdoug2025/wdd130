@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Pixel Rafting</title>
+    <meta name="description" content="Contact us for Pixel Rafting">
+    <meta name="author" content="Christopher Jones">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/raftinglogo.png" alt="Pixel Rafting logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contact">
+        <section id="company-info">
+            <h1>Pixel Rafting | Contact Us</h1>
+            <ul>
+                <li>777 Standing Wave Parkway</li>
+                <li>Saltwater City, Utah</li>
+                <li>Phone: +1 999 999 9999</li>
+                <li>Email: info@pixelrafting.com</li>
+            </ul>
+        </section>
+
+        <div id="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d14367.187111662615!2d-112.02505312001358!3d40.79876280043626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDDCsDQ3JzU2LjAiTiAxMTLCsDAwJzUzLjEiVw!5e0!3m2!1sen!2sus!4v1759631202958!5m2!1sen!2sus"
+                width="380" height="400" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <form>
+            <div class="input">
+                <label for="user-name">Name: </label>
+                <input type="text" id="user-name" name="user-name">
+            </div>
+
+            <div class="input">
+                <label for="user-email">Email:</label>
+                <input type="email" id="user-email" name="user-email">
+            </div>
+
+            <div class="input">
+                <p>Message Purpose</p>
+                <div>
+                    <input type="radio" id="general-inquiry" name="message-purpose" value="GeneralInquiry">
+                    <label for="general-inquiry">General Inquiry</label><br>
+
+                    <input type="radio" id="reservation-question" name="message-purpose" value="ReservationQuestion">
+                    <label for="reservation-question">Reservation Question</label><br>
+
+                    <input type="radio" id="website-suggestion" name="message-purpose" value="WebsiteSuggestion">
+                    <label for="website-suggestion">Website Suggestion</label>
+                </div>
+            </div>
+
+            <div class="input2">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Type here"></textarea>
+            </div>
+
+            <div class="input">
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Please subscribe me to the daily newsletter</label>
+            </div>
+
+            <button type="submit">Get in Touch!</button>
+        </form>
+
+        <section id="employee">
+            <h2>Meet Our Employees!</h2>
+            <figure>
+                <img src="images/employee-1.jpg" alt="CEO Williams" width="150">
+                <figcaption>CEO Williams</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee-2.jpg" alt="Manager Pixie" width="150">
+                <figcaption>Manager Pixie</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee-3.jpg" alt="Clerk Smith" width="150">
+                <figcaption>Clerk Smith</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee-4.jpg" alt="Seasonal Snoman" width="150">
+                <figcaption>Seasonal Snoman</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2025 | Pixel Rafting | Chris Jones
+        </p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com"><img src="images/facebook-square.svg" alt="Facebook"></a>
+            <a href="https://instagram.com"><img src="images/instagram-square.svg" alt="Instagram"></a>
+            <a href="https://youtube.com"><img src="images/youtube-square.svg" alt="Youtube"></a>
+        </nav>
+    </footer>
+</body>
+
+</html>

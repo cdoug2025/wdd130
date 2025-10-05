@@ -21,12 +21,12 @@ body {
 header, main, footer {
     width: 840px;
     margin: 0 auto;
+    display: grid;
 }
 
 header {
     background-color: var(--primary-color);
     color: var(--third-color);
-    display: grid;
     grid-template-columns: 150px 400px;
     align-items: center;
 }
@@ -34,7 +34,6 @@ header {
 footer {
     background-color: var(--secondary-color);
     color: var(--fourth-color);
-    display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: flex-end;
@@ -71,15 +70,25 @@ header img {
     float: left;
 }
 
-h1 {
-    position: absolute;
-    top: 20px;
-    width: 180px;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--third-color);
-    color: var(--fourth-color);
+form {
+    height: 400px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr 2fr 1fr 1fr;
+    align-items: center;
+    background-color: #ddd;
+    width: 90%;
+    padding: 10px 10px;
+    color: #333;
+    justify-self: center;
+}
+
+form button {
+    background-color: lightblue;
+    border-radius: .3rem;
+}
+
+form button:hover {
+    background-color: lightgreen;
 }
 
 .socialmedia a {
@@ -112,10 +121,63 @@ h1 {
     opacity: 1;
 }
 
+.input {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    align-items: center;
+}
+
+.input2 {
+    display: grid;
+    grid-template-rows: 25% 1fr;
+}
+
+.input label {
+    text-align: right;
+}
+
+#about h1 {
+    position: absolute;
+    top: 20px;
+    width: 180px;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--third-color);
+    color: var(--fourth-color);
+}
+
+#contact {
+    grid-template-columns: 1fr 1fr;
+}
+
+#company-info {
+    grid-column: span 2;
+    background-color: lightblue;
+    color: #222;
+    text-align: center;
+}
+
+#company-info ul {
+    list-style: none;
+    padding: 8px;
+}
+
+#company-info ul li {
+    padding: 5px;
+}
+
+#map{
+    display: flex;
+    justify-content: center;
+}
+
 #history {
+    background-color: lightgray;
+    padding: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
     align-items: center;
     justify-items: center;
 }
@@ -125,21 +187,31 @@ h1 {
     grid-column: span 3;
 }
 
-#adventure {
+#adventure, #employee {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
     align-items: center;
     justify-items: center;
+    background-color: lightblue;
 }
 
-#adventure h2 {
+#adventure {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#employee {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: span 2;
+    color: black;
+}
+
+#adventure h2, #employee h2 {
     display: grid;
     grid-column: span 5;
 }
 
-#adventure figure {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+#adventure figure, #employee figure {
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    justify-items: center;
 }
