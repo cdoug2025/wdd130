@@ -265,10 +265,6 @@ form button:hover {
     color: navy;
 }
 
-#call-to-contact a {
-    text-decoration: none;
-}
-
 #call-to-contact button:hover {
     background-color: lightgreen;
 }
