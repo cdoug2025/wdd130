@@ -263,6 +263,9 @@ form button:hover {
     margin-top: 10px;
     font-size: 120%;
     color: navy;
+}
+
+#call-to-contact a {
     text-decoration: none;
 }
 
