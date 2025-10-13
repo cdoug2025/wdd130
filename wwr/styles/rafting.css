@@ -240,6 +240,7 @@ form button:hover {
 #call-to-contact img {
     width: 100%;
     border: black solid 1px;
+    height: auto;
 }
 
 #call-to-contact p {
@@ -250,6 +251,7 @@ form button:hover {
     right: 10px;
     background-color: var(--third-color);
     color: lightblue;
+    
 }
 
 #call-to-contact button {
@@ -259,16 +261,13 @@ form button:hover {
     display: flex;
     justify-self: center;
     margin-top: 10px;
+    font-size: 120%;
+    color: navy;
+    text-decoration: none;
 }
 
 #call-to-contact button:hover {
     background-color: lightgreen;
-}
-
-#call-to-contact a {
-    font-size: 150%;
-    color: navy;
-    text-decoration: none;
 }
 
 #table {
